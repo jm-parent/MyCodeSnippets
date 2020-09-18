@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>DataTemplateSelector</Title>
+            <Shortcut>dts</Shortcut>
+            <Author>Jean-Marie PARENT</Author>
+            <Description>Code snippet for a DateTemplateSelector.</Description>
+            <SnippetTypes>
+                <SnippetType>Expansion</SnippetType>
+            </SnippetTypes>
+        </Header>
+        <Snippet>
+            <Declarations>
+                <Literal>
+                    <ID>templatename</ID>
+                    <ToolTip>DateTemplateSelector name</ToolTip>
+                    <Default>MySelector</Default>
+                </Literal>
+            </Declarations>
+            <Code Language="csharp">
+                <![CDATA[     
+             public class $templatename$ : Xamarin.Forms.DataTemplateSelector
+                {
+                    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+                        {
+                            return null;
+                        }
+                }
+            $end$]]>
+            </Code>
+            <Imports>
+                <Import>
+                    <Namespace>Xamarin.Forms</Namespace>
+                </Import>
+            </Imports>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
