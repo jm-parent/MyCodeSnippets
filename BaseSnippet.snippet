@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>BaseSnippet</Title>
+      <Shortcut>bssnip</Shortcut>
+      <Author>Jean-Marie PARENT</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>title</ID>
+          <Default>MyTitle</Default>
+        </Literal>
+        <Literal>
+          <ID>shortcut</ID>
+          <Default>MyShortcut</Default>
+        </Literal>
+        <Literal>
+          <ID>author</ID>
+          <Default>MyAuthor</Default>
+        </Literal>
+        <Literal>
+          <ID>language</ID>
+          <Default>XML</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="XML">
+        <![CDATA[
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>$title$</Title>
+      <Shortcut>$shortcut$</Shortcut>
+      <Author>$author$</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="$language$">
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+        ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
