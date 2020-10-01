@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>JPT Style</Title>
+      <Author>Jean-Marie PARENT</Author>
+      <Shortcut>jptstyle</Shortcut>
+    </Header>
+    <Snippet>
+    <Declarations>
+                <Literal>
+                    <ID>stylekey</ID>
+                    <ToolTip>Key Name</ToolTip>
+                    <Default>StyleKeyName</Default>
+                </Literal>
+                  <Literal>
+                    <ID>targettype</ID>
+                    <ToolTip>Target Type</ToolTip>
+                    <Default>MyTargetType</Default>
+                </Literal>
+            </Declarations>
+      <Code Language="XML" Delimiter="$"><![CDATA[
+        <Style x:Key="$stylekey$"
+               ApplyToDerivedTypes="True"
+               TargetType="$targettype$">
+            <Setter Property="" Value="" />
+        </Style>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

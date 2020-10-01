@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+         <SnippetType>SurroundsWith</SnippetType>
+      </SnippetTypes>
+      <Title>JPT Shadows</Title>
+      <Author>Jean-Marie PARENT</Author>
+      <Shortcut>jptshadows</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="XAML" Delimiter="$"><![CDATA[
+     <sh:Shadows CornerRadius="10">
+    <sh:Shadows.Shades>
+        <sh:ImmutableShades>
+            <sh:Shade BlurRadius="10"
+                      Opacity="0.5"
+                      Offset="-10,-10"
+                      Color="#FE99FE" />
+            <sh:Shade BlurRadius="10"
+                      Opacity="0.5"
+                      Offset="10,10"
+                      Color="#00B0FB" />
+        </sh:ImmutableShades>
+    </sh:Shadows.Shades>
+      $selected$
+</sh:Shadows>
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
